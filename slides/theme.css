@@ -2,9 +2,6 @@
 
 @import "uncover";
 
-/* @import url("node_modules/@fontsource-variable/source-sans-3/wght.css"); */
-@import url("node_modules/lucide-static/font/lucide.css");
-
 /* jetbrains-mono-latin-wght-normal */
 @font-face {
   font-family: 'JetBrains Mono Variable';
@@ -47,14 +44,12 @@
 
 @font-face {
   font-family: 'LucideIcons';
-  src: url(https://unpkg.com/lucide-static@latest/font/Lucide.ttf) format('truetype');
+  src: url(https://unpkg.com/lucide-static@latest/font/lucide.ttf) format('truetype');
 }
 
-:root {
-  --font-mono: "JetBrains Mono Variable";
-  --font-text: "Source Sans 3 Variable";
 
-  --color-foreground: #18181b;
+.icon-send:before {
+  content: "\e156";
 }
 
 [class^="icon-"],
@@ -66,12 +61,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-send:before {
-  content: "\e156";
-}
+:root {
+  --font-mono: "JetBrains Mono Variable";
+  --font-text: "Source Sans 3 Variable";
 
-* {
-  transition: background-color 0.3s;
+  --color-foreground: #18181b;
 }
 
 *::selection {
